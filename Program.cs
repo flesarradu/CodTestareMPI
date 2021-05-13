@@ -20,25 +20,17 @@ namespace MPI_SortCompare
                 d[i] = a[i];
             }
             DateTime now = DateTime.Now;
-            //BubbleSort(a);
+            BubbleSort(a);
             Console.WriteLine($"Timpul de executie al BubbleSort cu {a.Length} termeni este {(DateTime.Now - now).TotalSeconds.ToString("N6")} secunde");
             now = DateTime.Now;
             Array.Sort(b);
             Console.WriteLine($"Timpul de executie al QuickSort cu {a.Length} termeni este {(DateTime.Now - now).TotalSeconds.ToString("N6")} secunde");
             now = DateTime.Now;
-            //InsertionSort(c);
+            InsertionSort(c);
             Console.WriteLine($"Timpul de executie al InsertionSort cu {a.Length} termeni este {(DateTime.Now - now).TotalSeconds.ToString("N6")} secunde");
             now = DateTime.Now;
             HeapSort(d);
             Console.WriteLine($"Timpul de executie al HeapSort cu {a.Length} termeni este {(DateTime.Now - now).TotalSeconds.ToString("N6")} secunde");
-            //Print(a);
-            //Console.WriteLine("");
-            //Print(b);
-            //Console.WriteLine("");
-            //Print(c);
-            //Console.WriteLine("");
-            //Print(d);
-
         }
 
         public static void Print(int[] a)
